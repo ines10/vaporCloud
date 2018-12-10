@@ -1,19 +1,16 @@
+// swift-tools-version:4.0
 import PackageDescription
-
 let package = Package(
-    name: "FriendService",
+    name: "projectName",  // changed
     dependencies: [
-        .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
-        .Package(url: "https://github.com/vapor/mysql-provider.git", majorVersion: 2),
-        .Package(url: "https://github.com/vapor/validation.git", majorVersion: 1)
+        // 💧  A server-side Swift web framework.
+        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0-rc"),
+        .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0-rc"),
+        .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0-rc")
     ],
-    exclude: [
-        "Config",
-        "Database",
-        "Localization",
-        "Public",
-        "Resources",
-        "Tests",
-    ]
+    targets: [
+        .target(name: "App", dependencies: ["Vapor", "Leaf", "FluentSQLite"]),
+        .target(name: "Run", dependencies: ["App"]),
+        .testTarget(name: "AppTests", dependencies: ["App"]),
+        ]
 )
-
