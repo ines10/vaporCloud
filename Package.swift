@@ -1,19 +1,19 @@
-// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
-    name: "vaporCloud",
+    name: "FriendService",
     dependencies: [
-        // 💧 A server-side Swift web framework.
-        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
-
-        // 🔵 Swift ORM (queries, models, relations, etc) built on SQLite 3.
-        .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0")
+        .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
+        .Package(url: "https://github.com/vapor/mysql-provider.git", majorVersion: 2),
+        .Package(url: "https://github.com/vapor/validation.git", majorVersion: 1)
     ],
-    targets: [
-        .target(name: "App", dependencies: ["FluentSQLite", "Vapor"]),
-        .target(name: "Run", dependencies: ["App"]),
-        .testTarget(name: "AppTests", dependencies: ["App"])
+    exclude: [
+        "Config",
+        "Database",
+        "Localization",
+        "Public",
+        "Resources",
+        "Tests",
     ]
 )
 
