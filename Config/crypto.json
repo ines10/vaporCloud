@@ -1,0 +1,13 @@
+{
+    "hash": {
+        "method": "sha256",
+        "encoding": "hex",
+        "key": "5678123409871234"
+    },
+
+    "cipher": {
+        "method": "aes256",
+        "encoding": "base64",
+        "key": "FRIENDSERVICEISTHEGREATESTESTESTESTESTESTES="
+    }
+}
