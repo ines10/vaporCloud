@@ -1,18 +1,10 @@
-# FriendService
+<p align="center">
+  <h2>My First Controller 👨🏼‍💻 </h2>
+  <h3>Tutorial to build this project</h3>
+  <h4><a href="https://medium.com/@martinlasek/tutorial-how-to-write-controllers-47b5fd9a65c6">How to write Controllers</a></h4>
+  <br>
+  <img width="100%" src="my-first-controller.png" alt="screenshot">
+</p>
 
-Simple restful service written in swift using Vapor. FriendService is sample project for server-side swift example:
-http://swiftyjimmy.com/server-side-swift-setup-backend/
-
-Download or clone code and run vapor build. For more detailed instructions how to get the service up and running following the instructions in swiftyjimmy.com
-
-
-
-
-## 📖 Documentation
-
-Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package.
-
-## 💧 Community
-
-Join the welcoming community of fellow Vapor developers in [slack](http://vapor.team).
-
+## Community 🚀
+Join the awesome and welcoming Vapor community in <a href="http://vapor.team/"><b>Discord!</b></a>
